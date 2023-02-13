@@ -2867,7 +2867,6 @@ GameObject:
   - component: {fileID: 1959873575}
   - component: {fileID: 1959873574}
   - component: {fileID: 1959873573}
-  - component: {fileID: 1959873578}
   - component: {fileID: 1959873579}
   m_Layer: 3
   m_Name: MushroomEnemy (4)
@@ -5156,19 +5155,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 934814259}
   m_CullTransparentMesh: 1
---- !u!114 &942155053
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5540731973566067543}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40213bcf8c51c72459375938c7a5bcb4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemDrops: {fileID: 4535535558484420908, guid: d206aa34a4933b648a18d3f4c50884ac, type: 3}
 --- !u!1 &959369744
 GameObject:
   m_ObjectHideFlags: 0
@@ -75243,19 +75229,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &1959873578
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 446922771}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40213bcf8c51c72459375938c7a5bcb4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemDrops: {fileID: 4535535558484420908, guid: d206aa34a4933b648a18d3f4c50884ac, type: 3}
 --- !u!114 &1959873579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81688,6 +81661,10 @@ PrefabInstance:
       propertyPath: staminaBar
       value: 
       objectReference: {fileID: 6291412397870311257}
+    - target: {fileID: 1804510137391041910, guid: e10929e89cc637a47b660ff002c30e88, type: 3}
+      propertyPath: attackDamage
+      value: 30
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e10929e89cc637a47b660ff002c30e88, type: 3}
 --- !u!1 &2902304750094477670
@@ -84950,7 +84927,6 @@ GameObject:
   - component: {fileID: 5540731973566067535}
   - component: {fileID: 5540731973566067521}
   - component: {fileID: 5540731973566067534}
-  - component: {fileID: 942155053}
   - component: {fileID: 5540731973566067544}
   m_Layer: 3
   m_Name: MushroomEnemy
@@ -85197,6 +85173,22 @@ PrefabInstance:
     - target: {fileID: 1179881034259382009, guid: 2c33d707b623e354db7b5bc523cac2f7, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1179881034927970923, guid: 2c33d707b623e354db7b5bc523cac2f7, type: 3}
+      propertyPath: range
+      value: 1.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1179881034927970923, guid: 2c33d707b623e354db7b5bc523cac2f7, type: 3}
+      propertyPath: damage
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1179881034927970923, guid: 2c33d707b623e354db7b5bc523cac2f7, type: 3}
+      propertyPath: maxHealth
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 1179881034927970923, guid: 2c33d707b623e354db7b5bc523cac2f7, type: 3}
+      propertyPath: attackCooldown
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1179881034927970926, guid: 2c33d707b623e354db7b5bc523cac2f7, type: 3}
       propertyPath: m_RootOrder
