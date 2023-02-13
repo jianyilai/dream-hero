@@ -154,7 +154,7 @@ public class EnemyBehaviour : MonoBehaviour
     {
         int randomNumber = Random.Range(1, 101); // Generate a number from 1 to 100
 
-        if (randomNumber >= 70) // 30% chance for random number to be 70 or above
+        if (randomNumber >= 60) // 40% chance for random number to be 60 and above
         {
             // Spawn item on the enemy's position with no rotation
             Instantiate(itemDrops, transform.position, Quaternion.identity);
